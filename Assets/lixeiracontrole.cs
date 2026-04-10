@@ -8,7 +8,10 @@ public class lixeiracontrole : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        public class LixoSpawnerController : MonoBehaviour
+{
+ 
+}
     }
 
     // Update is called once per frame
