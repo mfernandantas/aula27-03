@@ -43,6 +43,14 @@ public class LixoSpawnerController : MonoBehaviour
             Vencer();
         }
     }
+    public void RemovePoints(int amount)
+{
+    if (jogoAcabou == false)
+    {
+        points -= amount;
+        pointsText.text = "Pontos: " + points;
+    }
+}
 
     void Vencer() {
         jogoAcabou = true;
