@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 669163037}
   - component: {fileID: 669163036}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: "TextoVit\xF3ria"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,7 +382,7 @@ RectTransform:
   m_GameObject: {fileID: 669163034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4.09, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1328765658}
@@ -390,7 +390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353, y: -159.91905}
+  m_AnchoredPosition: {x: -17, y: 1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669163036
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ARAB\xC9NS, VOC\xCA GANHOU!"
+  m_text: "PARAB\xC9NS, VOC\xCA GANHOU!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -607,12 +607,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1267068022 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6313638549276634889, guid: cc7be232acb242943a29e93522a5e371,
-    type: 3}
-  m_PrefabInstance: {fileID: 6313638549362802185}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1328765654
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,8 +803,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728852151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.8, z: 0}
-  m_LocalScale: {x: 2.74, y: -3.5, z: -4.17}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -828,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e41106aa368c54787ea6568e0e2b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 0.5
+  velocity: 0.8
 --- !u!114 &1728852157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -933,8 +927,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923119914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -4.37, z: 0}
-  m_LocalScale: {x: -81.6, y: -0.1, z: -26.75}
+  m_LocalPosition: {x: 0.1, y: -4.36, z: 0}
+  m_LocalScale: {x: 80, y: 0.5, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1120,11 +1114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumX: 5
-  fixedY: 8
+  fixedY: 10
   fixedZ: 0
   timer: 2
-  Lixo: {fileID: 1267068022}
-  MaxPoints: 3
+  Lixo: {fileID: 6313638549276634889, guid: cc7be232acb242943a29e93522a5e371, type: 3}
+  MaxPoints: 1
   points: 0
   pointsText: {fileID: 2059689680}
   victoryText: {fileID: 669163036}
@@ -1188,7 +1182,7 @@ PrefabInstance:
     - target: {fileID: 6313638549276634893, guid: cc7be232acb242943a29e93522a5e371,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6313638549276634893, guid: cc7be232acb242943a29e93522a5e371,
         type: 3}
