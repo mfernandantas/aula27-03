@@ -5,6 +5,7 @@ using UnityEngine;
 public class lixeiracontrole : MonoBehaviour
 {
     public float velocity;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +15,13 @@ public class lixeiracontrole : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      float horizontalInput = Input.GetAxis("Horizontal");
-      this.transform.position += new Vector3(horizontalInput*velocity,0,0);
+        float horizontalInput = Input.GetAxis("Horizontal");
+        this.transform.position += new Vector3(horizontalInput * velocity, 0, 0);
 
+        if (this.transform.position.x > 10) {
+            this.transform.position = new Vector3(10, this.transform.position.y, this.transform.position.z);
+        } else if (this.transform.position.x < -10) {
+            this.transform.position = new Vector3(-10, this.transform.position.y, this.transform.position.z);
+        }
     }
 }
