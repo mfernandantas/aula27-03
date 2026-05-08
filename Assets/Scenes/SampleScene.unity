@@ -849,6 +849,8 @@ GameObject:
   - component: {fileID: 1923119916}
   - component: {fileID: 1923119915}
   - component: {fileID: 1923119919}
+  - component: {fileID: 1923119920}
+  - component: {fileID: 1923119921}
   m_Layer: 0
   m_Name: Chao
   m_TagString: Untagged
@@ -944,6 +946,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 901571414b6a08847bfa16935ae69594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1923119920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923119914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd09f815afc13644978497cd332f509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 0}
+--- !u!114 &1923119921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923119914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ce9436ecaea004e906f69b3d2664fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2059689678
@@ -1118,7 +1145,7 @@ MonoBehaviour:
   fixedZ: 0
   timer: 2
   Lixo: {fileID: 6313638549276634889, guid: cc7be232acb242943a29e93522a5e371, type: 3}
-  MaxPoints: 1
+  MaxPoints: 10
   points: 0
   pointsText: {fileID: 2059689680}
   victoryText: {fileID: 669163036}
