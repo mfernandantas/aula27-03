@@ -5,6 +5,6 @@ public class MenuPrincipal : MonoBehaviour
 {
     public void IniciarJogo()
     {
-        SceneManager.LoadScene("CenaJogo");
+        SceneManager.LoadScene("SampleScene");
     }
 }
