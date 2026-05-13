@@ -7,11 +7,11 @@ public class AddPoints : MonoBehaviour
 {
     public AudioSource source;
     public LixoSpawnerController lixoSpawnerController;
-    private void OnCollisionEnter(Collision collision) {
+    private void OnTriggerEnter(Collider other) {
         
         // Optional: Check if the entering object is the Player
-        if (collision.gameObject.CompareTag("Lixo")) {
-            Destroy(collision.gameObject);
+        if (other.gameObject.CompareTag("Lixo")) {
+            Destroy(other.gameObject);
             source.Play();
             lixoSpawnerController.AddToPoints(1);
             
