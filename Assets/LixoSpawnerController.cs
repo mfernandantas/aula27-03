@@ -18,6 +18,9 @@ public class LixoSpawnerController : MonoBehaviour
     public TMP_Text pointsText;
     public TMP_Text victoryText;
 
+    // Variável para o som de quando perde ponto
+    public AudioSource somErro; 
+
     private bool jogoAcabou = false;
 
     void Start()
@@ -43,14 +46,24 @@ public class LixoSpawnerController : MonoBehaviour
             Vencer();
         }
     }
+
     public void RemovePoints(int amount)
-{
-    if (jogoAcabou == false)
     {
-        points -= amount;
-        pointsText.text = "Pontos: " + points;
+        if (jogoAcabou == false)
+        {
+            points -= amount;
+            
+            if (pointsText != null) {
+                pointsText.text = "Pontos: " + points;
+            }
+
+            // Toca o som de erro se ele estiver configurado no Unity
+            if (somErro != null) 
+            {
+                somErro.Play();
+            }
+        }
     }
-}
 
     void Vencer() {
         jogoAcabou = true;
